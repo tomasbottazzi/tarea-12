@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+</head>
+<style>
+    * {margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box ;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   }
+   body {
+       background-color: aquamarine;
+       background-size: cover;
+       color:rgb(2, 2, 2);
+       font-size: 16px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 20px;
+   }
+   .wrap { width: 850px;
+           max-width: 1000px;
+         margin: auto;
+        }
+       .widget{ 
+           width: 550px;
+           margin: 150px;
+        }
+        .widget p{ 
+           display: inline-block;
+           line-height: 1em;
+        }
+        .fecha { 
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+           text-align: center;
+           font-size: 35px;
+           margin-bottom: 15px;
+           background-color:rgb(119, 0, 255);
+           padding: 30px;
+           width:100%;
+            }
+        .reloj { 
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           width:100%;
+           padding: 35px;
+           font-size: 65px;
+           text-align: center;
+           background-color: rgb(255, 0, 0);
+           display: block;
+        }
+        .reloj .caja-segundos{
+           display:inline-block
+        }
+
+ </style>
+
+<body>
+    <div class="wrap">
+        <div class="widget">
+            <div class="fecha">
+                <p id="diasemana" class="diasemana"></p>
+                <p id="dia" class="dia"></p>
+                <p>de</p>
+                <p id="mes" class="mes"></p>
+                <p>del</p>
+                <p id="year" class="year"></p>
+            </div>
+                <div class="reloj">
+                    <p id="horas" class="horas"></p>
+                    <p>:</p>
+                    <div class="caja-segundos"></div>
+                   <p id="segundos" class="segundos"></p>
+                   <p>:</p>
+                    <p id="minutos" class="minutos"></p>
+                    <p id="ampm" class="ampm"></p>
+                   
+                 
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
